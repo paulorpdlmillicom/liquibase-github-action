@@ -198,6 +198,7 @@ function validate_operation() {
         check_required_param validate password $PASSWORD
         check_required_param validate url $URL
         check_required_param validate changeLogFile $CHANGELOGFILE
+        check_optional_param validate classpath $CLASSPATH
         ;;
 
     "checks run")

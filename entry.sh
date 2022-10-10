@@ -218,4 +218,4 @@ check_optional_param "$OPERATION" hubApiKey $HUBAPIKEY
 check_optional_param "$OPERATION" licenseKey $LICENSEKEY
 validate_operation
 
-docker-entrypoint.sh "--log-level=debug ${PARAMS[@]}" $OPERATION "${VALUES[@]}" "${SECONDPARAMS[@]}"
+docker-entrypoint.sh "${PARAMS[@]}" --log-level=FINE  $OPERATION "${VALUES[@]}" "${SECONDPARAMS[@]}"
